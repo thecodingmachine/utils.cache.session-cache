@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+	<displayName>Session Cache</displayName>
+	<shortDescription>This package contains a cache mechanism that relies on the session of the user.
+	Therefore, the cache is a bit special, since it is kept for the duration of the session, and is only
+	accessible by the current user. The session has to be started (using session_start()).</shortDescription>
+	<docUrl></docUrl>
+	<logo>logo.png</logo>
+	<dependencies>
+		<dependency>
+			<group>utils/cache</group>
+			<name>cache-interface</name>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<group>utils/log</group>
+			<name>log_interface</name>
+			<version>&gt;=1.0</version>
+		</dependency>
+	</dependencies>
+	<requires>
+		<require>SessionCache.php</require>
+	</requires>
+</package>
